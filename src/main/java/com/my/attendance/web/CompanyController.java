@@ -1,4 +1,4 @@
-package com.my.company.web;
+package com.my.attendance.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,23 +8,23 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.my.company.domain.MemberDto;
-import com.my.company.service.MemberService;
+import com.my.attendance.domain.Company;
+import com.my.attendance.service.CompanyService;
 
 @Controller
-@RequestMapping("member")
-public class MemberController {
+@RequestMapping("company")
+public class CompanyController {
     @Autowired
-    private MemberService memberService;
+    private CompanyService companyService;
     
     @GetMapping
-    public ModelAndView membermain(ModelAndView mv) {
-    	mv.setViewName("member");
+    public ModelAndView company(ModelAndView mv) {
+    	mv.setViewName("company");
     	return mv;
     }
     
     @PostMapping("add")
-    	public void addMember(@RequestBody MemberDto memberDto) {
-    	memberService.addMember(memberDto);
+    	public void addMember(@RequestBody Company company) {
+    	companyService.addMember(company);
     }
 }

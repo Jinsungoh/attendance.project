@@ -1,4 +1,4 @@
-package com.my.company;
+package com.my.attendance;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

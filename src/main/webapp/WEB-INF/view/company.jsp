@@ -56,15 +56,7 @@
             }
         }).open();
     }
-		function init(){
-			$('duplicate-check').click(() => {
-				$.ajax({
-					url:'post',
-					method:'post',
-					data:
-				})
-			})
-		}  
+		
 </script>
 <style>
     form {

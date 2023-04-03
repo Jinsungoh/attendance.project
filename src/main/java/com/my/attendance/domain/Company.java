@@ -1,10 +1,9 @@
-package com.my.company.domain;
-
+package com.my.attendance.domain;
 
 import lombok.Data;
 
 @Data
-public class MemberDto {
+public class Company {
 	private String comId;
 	private String comName;
     private String pw;  

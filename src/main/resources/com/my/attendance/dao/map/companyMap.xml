@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE mapper PUBLIC '-//mybatis.or/DTD mapper 3.0//EN'
 	'http://mybatis.org/dtd/mybatis-3-mapper.dtd'>
-<mapper namespace="com.my.company.dao.map.MemberMap">
-	<cache-ref namespace="com.my.company.dao.map.MemberMap" />
+<mapper namespace="com.my.attendance.dao.map.CompanyMap">
+	<cache-ref namespace="com.my.attendance.dao.map.CompanyMap" />
 	<insert id="insertMember" >
-		insert into attendance.companys 
+		insert into attendance.companys *
 		values (#{comName}, #{password}, #{email},
 		#{comId},#{regNo},${address},${president},#{phone},
 		#{comPostcode},#{comDetailaddr})
