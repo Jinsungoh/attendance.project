@@ -6,12 +6,12 @@ import org.springframework.stereotype.Repository;
 import com.my.attendance.dao.map.CompanyMap;
 import com.my.attendance.domain.Company;
 
-@Repository("dao.CompanyDao")
+@Repository("CompanyDao")
 public class CompanyDaoImpl implements CompanyDao{
 	@Autowired private CompanyMap companyMap;
 
 	@Override
-	public int insertMember(Company company) {
+	public Company insertMember(Company company) {
 		 return companyMap.insertMember(company);
 	}	
 }
